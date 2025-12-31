@@ -6,7 +6,7 @@ type WeatherType =
 
 const WeatherComponent = async () => {
   // const res = await fetch(`http://localhost:3000/api/weather/`, {cache: 'no-store'})
-  const res = await fetch(`/api/weather/`, {cache: 'no-store'})
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/weather/`, {cache: 'no-store'})
   const data : WeatherType = await res.json()
 
   if (!data.ok) return null
