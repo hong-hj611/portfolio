@@ -15,13 +15,13 @@ type Skill = {
   url?: string
 }
 
-const projects = [
+const projects: Skill[] = [
   { id: '1', title: 'HTML, CSS, JavaScript', desc: 'Clone Site and Event (Scroll, rolling, slide, animate) / Team Project(GitHub)', type: 'route' },
   { id: '2', title: 'javaScript 응용', desc: 'canvas particle 배경 효과, game, 계산기, 지하철노선', type: 'route' },
   { id: '3', title: 'node.js, GCP, DB', desc: '방명록을 통해 소통하기', type: 'route'  },
   { id: '4', title: 'React로 만든 쇼핑몰', desc: 'JSON 파일, 상품 목록 관리 및 장바구니 관리', type: 'external', url: 'https://hong-hj611.github.io/react_shopping/' },
   { id: '5', title: 'API, React Native 등', desc: '날씨앱, 지도앱, React Native- TodoList', type: 'route'  },
-  { id: '6', title: 'Next.js', desc: 'login/logout 구현 및 관리자 페이지' },
+  { id: '6', title: 'Next.js', desc: 'login/logout 구현 및 Library 응용(Gsap, Swiper 등)', type: 'route' },
 ]
 
 // useRef / useEffect
@@ -46,25 +46,22 @@ const page = () => {
       {
         threshold: 0.2
       }
-      
     )
 
     cardsRef.current.forEach( card => {
       // if (card) observer.observe(card)
       if (!card) return
       observer.observe(card)
-
-      
     })
 
     return () => observer.disconnect()
   },[])
 
-  const handleClick = (skill : any) => {
+  const handleClick = (skill : Skill) => {
     if (skill.type === 'external') {
-      window.open(skill.url, '_blank', 'nopoener,noreferrer')
+      window.open(skill.url, '_blank', 'noopoener,noreferrer')
     }else {
-      router.push('/skills/${projects.id')
+      router.push(`/skills/${skill.id}`)
     }
   }
 
@@ -74,7 +71,7 @@ const page = () => {
 
       <div className={styles.card_wrap}>
         {
-          projects.map((project, id) => (
+          projects.map((project) => (
             <ProjectCard 
               key={project.id} 
               title={project.title} 
