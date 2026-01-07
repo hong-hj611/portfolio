@@ -21,7 +21,7 @@ const projects: Skill[] = [
   { id: '3', title: 'node.js, GCP, DB', desc: '방명록을 통해 소통하기', type: 'route'  },
   { id: '4', title: 'React로 만든 쇼핑몰', desc: 'JSON 파일, 상품 목록 관리 및 장바구니 관리', type: 'external', url: 'https://hong-hj611.github.io/react_shopping/' },
   { id: '5', title: 'API, React Native 등', desc: '날씨앱, 지도앱, React Native- TodoList', type: 'route'  },
-  { id: '6', title: 'Next.js', desc: 'login/logout 구현 및 Library 응용(Gsap, Swiper 등)', type: 'external', url: 'https://hong-hj611.github.io/nextall/' },
+  { id: '6', title: 'Next.js', desc: 'login/logout 구현 및 Library 응용(Gsap, Swiper 등)', type: 'external', url: 'https://nextall.vercel.app/' },
 ]
 
 // useRef / useEffect
