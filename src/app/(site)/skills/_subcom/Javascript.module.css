@@ -1,0 +1,59 @@
+.jsSection {
+  text-align: center;
+  margin-top: 100px;
+}
+.jsWrap {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  /* gap: 50px;  */
+}
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px;
+}
+.article {
+  margin: 20px 0;
+}
+.card {
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.imgBox {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  border: 5px solid #aaa;
+  border-radius: 10px;
+}
+.imgBox img, .imgBoxLeft img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.card:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+}
+@media screen and (max-width:768px) {
+  .jsWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 500px;
+  }
+  .imgBox {
+    width: 100%;
+    height: 100%;
+  }
+}
