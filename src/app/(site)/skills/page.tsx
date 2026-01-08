@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import { div } from 'framer-motion/client'
 import Link from 'next/link'
 import { useFadeUp } from '../../hook/useFadeUp'

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { useFadeUp } from '../hook/useFadeUp'
-import styles from '../(site)/skills/page.module.css'
+import styles from '../(site)/skills/page.module.scss'
 
 type ProjectCardType = {
   title: string

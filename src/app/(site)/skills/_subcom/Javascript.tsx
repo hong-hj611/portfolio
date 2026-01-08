@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import styles from './Javascript.module.css'
+import styles from './Javascript.module.scss'
 
 const Javascript = () => {
   return (

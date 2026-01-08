@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import styles from './Api.module.css'
+import styles from './Api.module.scss'
 
 const Api = () => {
    return (

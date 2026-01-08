@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 
 const lines = [
   '사용자 경험을 중심에 두는 프론트엔드 개발자입니다.',
